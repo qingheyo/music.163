@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<hml lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="vip.css">
+
+
+
+    </head>
+
+    <body>
+
+        <div class="vip-container">
+            <!-- 两个超链接 -->
+            <div class="vip-top">
+                <a href="" style="color: #328ad4" id="vip-top-a1">本月已下载的付费歌曲 &gt;</a>
+                <a href="" style="color: #328ad4" id="vip-top-a2">我购买的单曲 &gt;</a>
+                <!-- 头像栏 -->
+                <div class="vip-logo">
+                    <span class="vip-logo-span"><img src="./images/30.jpg" alt="" width="120px" height="120px"></span>
+
+                    <div class="vip-logo-context">
+                        <span class="vip-logo-context-span1">青禾</span>
+                        <img src="./images/41.png" alt="" width="38px; height20px"><br>
+                        <span class="vip-logo-context-span2">当前未开通</span>
+                        <input type="button" value="买会员赠好友" id="vip-logo-input1"></input>
+                        <input type="button" value="使用兑换码" id="vip-logo-input2"></input>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="vip-mid">
+                <div class="vip-mid-left">
+                    <!--黑胶vip 音乐包 -->
+
+                    <span>黑胶vip</span>
+                    <img src="./images/42.png" alt="" width="23px" height="12px">
+                </div>
+                <div class="vip-mid-right">
+                    <span>音乐包</span>
+                    <img src="./images/43.png" alt="" width="12px" height="12px">
+                </div>
+            </div>
+
+
+            <!-- 支付包月 -->
+            <div class="vip-bottom">
+                <ul>
+                    <li class="vip-li1" id="vip-id1" onmouseover="over1()">
+                        <div class="vip-bottom-div1">新客首月5元</div>
+                        <div class="vip-bottom-div2">
+                            <span class="vip-bottom-span1">4.8</span>
+                            <span class="vip-bottom-span2">元/月</span>
+                        </div>
+                        <span class="vip-bottom-span3">11元/月</span>
+                        <span class="vip-bottom-span4">特惠仅限本月</span>
+                        <span class="vip-bottom-span5">连续包月</span>
+
+                    </li>
+                    <li class="vip-li2" onmouseover="over()"><span class="vip-bottom-span6">15</span>
+                        <span class="vip-bottom-span7">元</span>
+                        <span class="vip-bottom-span8">1个月</span>
+
+                    </li>
+                    <li class="vip-li3" onmouseover="over()">
+                        <span class="vip-bottom-span9">40</span>
+                        <span class="vip-bottom-span10">元</span>
+                        <span class="vip-bottom-span11">13.33元/月</span>
+                        <span class="vip-bottom-span12">3个月</span>
+                    </li>
+                    <li class="vip-li3" onmouseover="over()">
+                        <span class="vip-bottom-span13">138</span>
+                        <span class="vip-bottom-span14">元</span>
+                        <span class="vip-bottom-span15">11.5元/月</span>
+                        <span class="vip-bottom-span16">12个月</span>
+                    </li>
+                </ul>
+
+                <div class="vip-bottom-mid">
+                    <span class="vip-bottom-mid-span1">选择优惠券</span>
+                    <span class="vip-bottom-mid-span2">兑换优惠券</span><br/>
+
+                    <input list="input" placeholder="该活动不支持使用优惠券" width="200px" height="100px">
+                    <datalist id="input">
+                            <option value="无可用优惠券"></option>
+                        </datalist>
+                </div>
+                <span class="span100">支付方式</span>
+                <div class="vip-bottom-foot">
+                    <img src="./images/44.png" height="100px" width="100px" alt="" id="vip-bottom-foot-img">
+                    <span class="vip-bottom-foot-span1">使用微信 支付宝扫码付款</span>
+                    <img src="./images/32.png" alt="" height="18px" width="18px" id="vip-bottom-foot-img1">
+                    <img src="./images/33.png" alt="" height="18px" width="18px" id="vip-bottom-foot-img2">
+                    <span class="vip-bottom-foot-span2">4.8</span>
+                    <span class="vip-bottom-foot-span3">元</span>
+                    <span class="vip-bottom-foot-span4">(已省<span class="vip-bottom-foot-span5">6.2元</span>)</span>
+
+                </div>
+                <div class="vip-bottom-foot2">
+                    <span class="vip-bottom-foot2-span1">黑胶vip特权</span>
+                </div>
+                <div class="vip-bottom-foot3">
+                    <ul>
+                        <li><img src="./images/46.png" alt="" width="60px" height="60px"><span>会员曲库</span></li>
+                        <li><img src="./images/47.png" alt="" width="60px" height="60px"><span>无损音质</span></li>
+                        <li><img src="./images/48.png" alt="" width="60px" height="60px"><span>免费下载</span></li>
+                        <li><img src="./images/49.png" alt="" width="60px" height="60px"><span>免广告</span></li>
+                        <li><img src="./images/50.png" alt="" width="60px" height="60px"><span>音画主题</span></li>
+                    </ul>
+                    <ul>
+                        <li><img src="./images/51.png" alt="" width="60px" height="60px"><span>头像挂件</span></li>
+                        <li><img src="./images/52.png" alt="" width="60px" height="60px"><span>个性皮肤</span></li>
+                        <li><img src="./images/53.png" alt="" width="60px" height="60px"><span>商城折扣</span></li>
+                        <li><img src="./images/54.png" alt="" width="60px" height="60px"><span>票务特权</span></li>
+                        <li><img src="./images/55.png" alt="" width="60px" height="60px"><span class="vip-bottom-foot3-span">福利券</span></li>
+                    </ul>
+
+                </div>
+                <div class="vip-bottom-foot4">
+                    <span class="vip-bottom-foot4-span1">vip专享下载曲库</span><br>
+                    <span class="vip-bottom-foot4-span2">畅想2355万首vip下载歌曲</span><br>
+                    <span class="vip-bottom-foot4-span3">查看全部 ></span>
+                </div>
+                <div class="vip-bottom-foot5">
+                    <ul>
+                        <li><img src="./images/56.png" alt="" width="160px" height="160px"></li>
+                        <li><img src="./images/57.jpeg" alt="" width="160px" height="160px"></li>
+                        <li><img src="./images/58.jpeg" alt="" width="160px" height="160px"></li>
+                        <li><img src="./images/59.jpeg" alt="" width="160px" height="160px"></li>
+                    </ul>
+                </div>
+                <div class="vip-bottom-foot6">
+                    <span class="vip-bottom-foot6-span">黑胶vip服务协议</span>
+                    <span class="vip-bottom-foot5-span">音乐包服务协议</span>
+                    <span class="vip-bottom-foot5-span">常见问题解答</span>
+                </div>
+            </div>
+            <script>
+                function over() {
+                    console.log(11111);
+                    var x = document.getElementById("vip-id1").style.borderColor = "#eee";
+                }
+
+                function over1() {
+                    var y = document.getElementById("vip-id1").style.borderColor = "#fa4f4d";
+                }
+            </script>
+
+        </div>
+
+
+    </body>
+
+</hml> 

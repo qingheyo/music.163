@@ -1,0 +1,707 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+
+/* 主容器 */
+
+.vip-container {
+    background-color: #ffffff;
+    height: 1650px;
+    width: 980px;
+    margin: 0 auto;
+}
+
+
+/* 上半区 */
+
+.vip-top {
+    border: 1px solid #d3d3d3;
+    border-bottom: #eeeeee;
+    background-image: url(./images/40.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-color: #f3f4f5;
+    width: 980px;
+    height: 200px;
+    border-bottom: none;
+}
+
+
+/* 超链接 */
+
+.vip-top a {
+    text-decoration: none;
+    font-size: 12px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+#vip-top-a1:hover {
+    text-decoration: underline;
+}
+
+#vip-top-a2:hover {
+    text-decoration: underline;
+}
+
+
+/*  头像区*/
+
+.vip-logo {
+    height: 128px;
+    width: 730px;
+    margin: 42px 70px;
+}
+
+
+/* 头像区边框*/
+
+.vip-logo-span {
+    float: left;
+    height: 126px;
+    width: 126px;
+    border: 1px solid #d5d5d5;
+}
+
+
+/* 头像 */
+
+.vip-logo-span>img {
+    position: relative;
+    top: 3px;
+    left: 3px;
+    line-height: 125px;
+    float: left;
+}
+
+
+/* 头像区旁边的内容区 */
+
+.vip-logo-context {
+    position: relative;
+    float: left;
+    margin-left: 10px;
+    height: 128px;
+    width: 580px;
+}
+
+
+/* id字体 */
+
+.vip-logo-context-span1 {
+    display: inline-block;
+    font-size: 22px;
+    font-family: 微软雅黑;
+    margin-left: 10px;
+}
+
+
+/* 字体 */
+
+.vip-logo-context-span2 {
+    display: inline-block;
+    font-size: 12px;
+    margin-left: 10px;
+    color: #333;
+}
+
+
+/* id旁的图片 */
+
+.vip-logo-context img {
+    display: inline-block;
+}
+
+
+/* 内容区下方按钮1 */
+
+#vip-logo-input1 {
+    border: 1px solid #bbb;
+    color: #666;
+    font-family: PingFang SC;
+    font-size: 14px;
+    border-color: #ccc;
+    height: 40px;
+    width: 126px;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    cursor: pointer;
+}
+
+#vip-logo-input1:hover {
+    background-color: #dcdfe6;
+}
+
+
+/* 内容区下方按钮2 */
+
+#vip-logo-input2 {
+    color: #666;
+    border: 1px solid #bbb;
+    font-family: PingFang SC;
+    font-size: 14px;
+    height: 40px;
+    width: 126px;
+    position: relative;
+    top: 57px;
+    left: 75px;
+    cursor: pointer;
+}
+
+#vip-logo-input2:hover {
+    background-color: #dcdfe6;
+}
+
+
+/* 中部 */
+
+.vip-mid {
+    border: 1px solid #d3d3d3;
+    background-color: #ffffff;
+    width: 980px;
+    height: 50px;
+    border-top: none;
+    border-bottom: none;
+}
+
+
+/* 黑胶vip */
+
+.vip-mid-left {
+    color: #666;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 50px;
+    float: left;
+    background-color: #ffffff;
+    width: 380px;
+    height: 50px;
+}
+
+.vip-mid-left span {
+    background-color: #ffffff;
+}
+
+
+/* 音乐包 */
+
+.vip-mid-right {
+    color: #666;
+    font-size: 15px;
+    margin-right: 50px;
+    text-align: center;
+    line-height: 50px;
+    float: right;
+    background-color: #ffffff;
+    width: 380px;
+    height: 50px;
+}
+
+.vip-mid-right span {
+    background-color: #ffffff;
+}
+
+
+/* 底部 */
+
+.vip-bottom {
+    height: 1450px;
+    width: 100%;
+    border: 1px solid #d5d5d5;
+    background-color: #ffffff;
+}
+
+
+/* 底部的ul */
+
+.vip-bottom>ul {
+    margin: 0 40px;
+    background-color: #ffffff;
+    height: 200px;
+    list-style: none;
+}
+
+
+/* 四个框  支付*/
+
+.vip-bottom>ul li {
+    margin-left: 27px;
+    position: relative;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    float: left;
+    height: 140px;
+    width: 190px;
+    cursor: pointer;
+}
+
+.vip-bottom>ul li:hover {
+    border: 1px solid #fa4f4d;
+}
+
+.vip-bottom>ul .vip-li1 {
+    border: 1px solid #fa4f4d;
+}
+
+
+/* 新客户首冲 */
+
+.vip-bottom-div1 {
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 80px;
+    background-color: #fa4f4d;
+    border-bottom-left-radius: 2px;
+}
+
+
+/* li里的内容 */
+
+.vip-bottom-div2 {
+    background-color: #ffffff;
+    margin-top: 22px;
+}
+
+
+/* 底部span背景 */
+
+.vip-bottom span {
+    background-color: #ffffff;
+}
+
+
+/* 4.8样式 */
+
+.vip-bottom-span1 {
+    font-size: 30px;
+    position: absolute;
+    bottom: 70px;
+    left: 30px;
+}
+
+
+/* 元/月 */
+
+.vip-bottom-span2 {
+    position: absolute;
+    left: 70px;
+    bottom: 75px;
+    font-size: 14px;
+}
+
+
+/* 11元/月 */
+
+.vip-bottom-span3 {
+    text-decoration: line-through;
+    position: absolute;
+    color: #999;
+    font-size: 14px;
+    bottom: 75px;
+    left: 110px;
+}
+
+
+/* 特惠仅限本月 */
+
+.vip-bottom-span4 {
+    position: absolute;
+    bottom: 45px;
+    left: 55px;
+    font-size: 14px;
+    color: #999;
+}
+
+
+/* 连续包月 3个月*/
+
+.vip-bottom-span5 {
+    text-align: center;
+    line-height: 26px;
+    display: inline-block;
+    width: 100%;
+    height: 26px;
+    margin-top: 90px;
+    font-size: 14px;
+    border-top: 1px dashed #eee;
+}
+
+
+/* 15 40 */
+
+.vip-bottom-span6,
+.vip-bottom-span9 {
+    font-size: 30px;
+    position: absolute;
+    bottom: 70px;
+    left: 71px;
+}
+
+
+/* 138 */
+
+.vip-bottom-span13 {
+    font-size: 30px;
+    position: absolute;
+    bottom: 70px;
+    left: 58px;
+}
+
+
+/* 13.33 11.5 */
+
+.vip-bottom-span11,
+.vip-bottom-span15 {
+    position: absolute;
+    bottom: 45px;
+    left: 65px;
+    font-size: 14px;
+    color: #999;
+}
+
+
+/* 1个月  12个月 */
+
+.vip-bottom-span8,
+.vip-bottom-span16,
+.vip-bottom-span12 {
+    text-align: center;
+    line-height: 26px;
+    display: inline-block;
+    width: 100%;
+    height: 26px;
+    margin-top: 113px;
+    font-size: 14px;
+    border-top: 1px dashed #eee;
+}
+
+
+/* 元 */
+
+.vip-bottom-span7,
+.vip-bottom-span10,
+.vip-bottom-span14 {
+    font-size: 14px;
+    position: absolute;
+    bottom: 78px;
+    left: 105px;
+}
+
+
+/* 中部 */
+
+.vip-bottom-mid {
+    height: 100px;
+    margin-left: 55px;
+    background-color: #ffffff;
+}
+
+
+/* 选择优惠券 */
+
+.vip-bottom-mid-span1 {
+    font-family: PingFang SC;
+    font-size: 14px;
+}
+
+
+/* 兑换优惠券 */
+
+.vip-bottom-mid-span2 {
+    font-family: PingFang SC;
+    font-size: 12px;
+    color: #328ad4
+}
+
+
+/* 两个 span */
+
+.vip-bottom-mid span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+/* 输入框 */
+
+.vip-bottom-mid input {
+    padding-left: 10px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    margin-left: 10px;
+    display: inline-block;
+    width: 290px;
+    height: 40px;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+}
+
+
+/* 选择框 */
+
+.vip-bottom-mid option {
+    background-color: #ffffff;
+}
+
+
+/* 支付方式 */
+
+.span100 {
+    margin-left: 65px;
+    margin-top: 15px;
+}
+
+
+/* 支付页 */
+
+.vip-bottom-foot {
+    position: relative;
+    background-color: #ffffff;
+    margin-left: 60px;
+    margin-top: 20px;
+    border: 1px solid #eee;
+    height: 150px;
+    width: 850px;
+}
+
+
+/* 扫码付款 */
+
+#vip-bottom-foot-img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+/* 微信支付宝付款 */
+
+.vip-bottom-foot-span1 {
+    position: absolute;
+    left: 140px;
+    top: 20px;
+}
+
+
+/* 付款图标 */
+
+#vip-bottom-foot-img1 {
+    position: absolute;
+    left: 140px;
+    top: 50px;
+}
+
+#vip-bottom-foot-img2 {
+    position: absolute;
+    left: 170px;
+    top: 50px;
+}
+
+
+/* 4.8 */
+
+.vip-bottom-foot-span2 {
+    font-size: 44px;
+    position: absolute;
+    left: 140px;
+    top: 75px;
+}
+
+
+/* 元 */
+
+.vip-bottom-foot-span3 {
+    position: absolute;
+    left: 200px;
+    top: 95px;
+}
+
+
+/* 已省6.2元 */
+
+.vip-bottom-foot-span4 {
+    position: absolute;
+    left: 230px;
+    top: 95px;
+}
+
+
+/* 6.2元 */
+
+.vip-bottom-foot-span5 {
+    color: #fa4f4d;
+}
+
+
+/* 黑胶vip的框 */
+
+.vip-bottom-foot2 {
+    height: 30px;
+    width: 86%;
+    margin: 50px auto;
+    background-color: #ffffff;
+}
+
+
+/* 黑胶vip特权 */
+
+.vip-bottom-foot2-span1 {
+    font-size: 22px;
+    width: 100%;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* 两个伪元素 */
+
+.vip-bottom-foot2-span1::before {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.vip-bottom-foot2-span1::after {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+
+/* 图标div */
+
+.vip-bottom-foot3 {
+    background-color: #ffffff;
+    height: 300px;
+    width: 100%;
+}
+
+
+/* ul */
+
+.vip-bottom-foot3>ul {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 70px 0px 60px;
+    background-color: #ffffff;
+    height: 160px;
+    list-style: none;
+}
+
+
+/* 10个li */
+
+.vip-bottom-foot3>ul li {
+    position: relative;
+    background-color: #ffffff;
+    flex: 1;
+}
+
+.vip-bottom-foot3 img {
+    background-color: #ffffff;
+    position: absolute;
+    top: 25px;
+    left: 55px;
+}
+
+.vip-bottom-foot3 span {
+    position: absolute;
+    top: 110px;
+    left: 55px;
+}
+
+.vip-bottom-foot3-span {
+    position: absolute;
+    top: 100px;
+    left: 65px!important;
+}
+
+
+/* vip专享下载曲库 */
+
+.vip-bottom-foot4 {
+    margin-top: 60px;
+    background-color: #ffffff;
+    height: 150px;
+    text-align: center;
+}
+
+.vip-bottom-foot4-span1 {
+    display: block;
+    font-size: 22px;
+}
+
+.vip-bottom-foot4-span2 {
+    display: block;
+    font-size: 32px;
+}
+
+
+/* 查看全部 */
+
+.vip-bottom-foot4-span3 {
+    font-size: 12px;
+    color: #328ad4;
+    cursor: pointer;
+}
+
+.vip-bottom-foot4-span3:hover {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+
+/* 最后的图片div */
+
+.vip-bottom-foot5 {
+    background-color: #ffffff;
+    height: 200px;
+}
+
+.vip-bottom-foot5 ul {
+    background-color: #ffffff;
+    list-style: none;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.vip-bottom-foot5 li {
+    position: relative;
+    flex: 1;
+    background-color: #ffffff;
+}
+
+.vip-bottom-foot5 img {
+    position: absolute;
+    top: 20px;
+    left: 45px;
+}
+
+.vip-bottom-foot6 {
+    background-color: #ffffff;
+    text-align: center;
+    height: 50px;
+    margin-top: 40px;
+}
+
+.vip-bottom-foot6 span {
+    font-size: 12px;
+    cursor: pointer;
+    color: #999999;
+    text-decoration: underline;
+}

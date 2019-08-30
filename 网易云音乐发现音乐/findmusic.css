@@ -1,0 +1,796 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+
+/* 头部 */
+
+.findmusic-header {
+    background-color: #242424;
+    width: 1280px;
+    height: 70px;
+    margin: 0 auto;
+}
+
+
+/* 导航栏ul */
+
+.findmusic-header ul:nth-child(1) {
+    list-style: none;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    top: 0;
+    flex-direction: row;
+}
+
+
+/* 每一个li */
+
+.findmusic-header ul:nth-child(1) li {
+    color: #cccccc;
+    font-size: 14px;
+    font-family: PingFang SC;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    flex: 1;
+}
+
+.findmusic-header ul:nth-child(1)>li:nth-child(2):hover,
+.findmusic-header ul:nth-child(1)>li:nth-child(3):hover,
+.findmusic-header ul:nth-child(1)>li:nth-child(4):hover,
+.findmusic-header ul:nth-child(1)>li:nth-child(5):hover,
+.findmusic-header ul:nth-child(1)>li:nth-child(6):hover,
+.findmusic-header ul:nth-child(1)>li:nth-child(7):hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.findmusic-header ul:nth-child(1)>li:nth-child(2),
+.findmusic-header ul:nth-child(1)>li:nth-child(3),
+.findmusic-header ul:nth-child(1)>li:nth-child(4),
+.findmusic-header ul:nth-child(1)>li:nth-child(5),
+.findmusic-header ul:nth-child(1)>li:nth-child(6),
+.findmusic-header ul:nth-child(1)>li:nth-child(7),
+.findmusic-header ul:nth-child(1)>li:nth-child(9),
+.findmusic-header ul:nth-child(1)>li:nth-child(10) {
+    cursor: pointer;
+}
+
+
+/* 网易云音乐logoli */
+
+#findmusic-header-li1 {
+    flex-basis: 140px;
+    cursor: pointer;
+}
+
+
+/* input 输入框li */
+
+#findmusic-header-li2 {
+    position: relative;
+    flex-basis: 80px;
+}
+
+
+/* 放大镜图片 */
+
+#findmusic-header-li2>img {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+}
+
+
+/* buttonli */
+
+#findmusic-header-li3 {
+    flex-basis: 40px;
+}
+
+
+/* 导航栏input框 */
+
+#findmusic-header-input1 {
+    height: 30px;
+    width: 128px;
+    border: none;
+    line-height: 30px;
+    font-size: 12px;
+    color: #666;
+    padding-left: 25px;
+    border-radius: 32px;
+}
+
+
+/* 创作者中心按钮 */
+
+#findmusic-header-li3 button {
+    background-color: #000;
+    width: 106px;
+    height: 32px;
+    color: #cccccc;
+    border: 1px solid #4c4c4c;
+    border-radius: 32px;
+    text-align: center;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+
+/* 创作者中心伪类 */
+
+#findmusic-header-li3 button:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+
+/* 头像栏 */
+
+#findmusic-header-li4 {
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+}
+
+#findmusic-header-li4 img:nth-child(1) {
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.findmusic-header ul:nth-child(2) {
+    cursor: pointer;
+    height: 210px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: fixed;
+    top: 60px;
+    right: 40px;
+    display: none;
+    z-index: 80;
+}
+
+
+/* 头像弹出列表 */
+
+.findmusic-header ul:nth-child(2)>li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #cccccc;
+    background-color: #333;
+    border: 1px solid #292727;
+    border-bottom: none;
+}
+
+.findmusic-header ul:nth-child(2)>li:hover {
+    background-color: rgb(83, 83, 83);
+}
+
+.findmusic-header ul:nth-child(2)>li img {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+}
+
+.findmusic-header ul:nth-child(2)>li:nth-child(7) {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+
+/* 红色横幅 */
+
+.findmusic-header-bottom {
+    height: 5px;
+    width: 100%;
+    background-color: #c20c0c;
+}
+
+
+/* 中部内容区 */
+
+.findmusic-mid {
+    height: 336px;
+    width: 1280px;
+    margin: 5px auto;
+}
+
+
+/* 轮播图的父容器 */
+
+.findmusic-mid-lunbo {
+    background-color: #56514c;
+    position: relative;
+    height: 336px;
+    width: 100%;
+}
+
+
+/* 轮播图的图片 */
+
+.findmusic-mid-lunbo img:nth-child(1) {
+    position: absolute;
+    left: 140px;
+    height: 336px;
+    width: 730px;
+    cursor: pointer;
+}
+
+
+/* 下载地址的图片 */
+
+.findmusic-mid-lunbo img:nth-child(3) {
+    position: absolute;
+    left: 870px;
+    height: 336px;
+    width: 254px;
+}
+
+#lunbo-left {
+    float: left;
+    width: 30px;
+    height: 50px;
+    margin-left: 70px;
+    color: #777;
+    font-size: 40px;
+    margin-top: 143px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#lunbo-right {
+    float: right;
+    width: 30px;
+    height: 50px;
+    margin-top: 143px;
+    margin-right: 70px;
+    color: #777;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#lunbo-left:hover,
+#lunbo-right:hover {
+    background-color: rgb(194, 189, 189);
+    opacity: 0.3;
+}
+
+
+/* 索引 */
+
+.lunbo-bottom {
+    height: 10px;
+    width: 300px;
+    position: relative;
+    top: 306px;
+    left: 320px;
+}
+
+.lunbo-bottom>span {
+    float: left;
+    height: 5px;
+    width: 5px;
+    margin-right: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.findmusic-context {
+    position: relative;
+    height: 1524px;
+    width: 984px;
+    margin-left: 140px;
+}
+
+
+/* 中部左边div */
+
+.findmusic-mid-left {
+    position: relative;
+    background-color: #ffffff;
+    float: left;
+    width: 689px;
+    padding: 20px 20px 40px;
+    height: 550px;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+
+
+/* 中部右边div */
+
+.findmusic-mid-right {
+    background-color: #ffffff;
+    position: absolute;
+    right: 0px;
+    width: 251px;
+    height: 1648px;
+    
+    border-right: 1px solid rgb(211,211,211)
+}
+
+
+/* 第一个span */
+
+.findmusic-mid-left-span1 {
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+
+/*五个相同的span  */
+
+.findmusic-mid-left-span1~span {
+    margin-left: 20px;
+    color: #666;
+    margin-top: 8px;
+    float: left;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.findmusic-mid-left img {
+    position: absolute;
+    top: 23px;
+    left: 15px;
+}
+
+.findmusic-mid-left2>img {
+    position: absolute;
+    top: 23px;
+    left: 15px;
+}
+
+
+/* 更多 */
+
+.findmusic-mid-left .findmusic-mid-left-span2 {
+    float: right;
+}
+
+
+/* span的伪类 */
+
+.findmusic-mid-left-span1~span:hover {
+    text-decoration: underline;
+}
+
+.findmusic-mid-left ul {
+    position: relative;
+    list-style: none;
+    display: flex;
+    height: 250px;
+    width: 700px;
+    flex-direction: row;
+}
+
+.findmusic-mid-left ul li {
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    flex: 1;
+}
+
+.findmusic-mid-left-ul1 li {
+    border-top: 2px solid #c10d0c;
+}
+
+.findmusic-mid-left ul span {
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    float: left;
+    width: 140px;
+    height: 20px;
+    top: 170px;
+    left: 20px;
+}
+
+.findmusic-mid-left ul span:hover {
+    text-decoration: underline;
+}
+
+.findmusic-mid-left2 {
+    position: relative;
+    background-color: #ffffff;
+    float: left;
+    width: 689px;
+    padding: 20px 20px 40px;
+    height: 350px;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+
+#findmusic-mid-left-span3 {
+    position: relative;
+    left: -16px;
+    display: block;
+    width: 680px;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: #c10d0c;
+}
+
+.findmusic-mid-left2 ul {
+    list-style: none;
+    display: flex;
+    height: 186px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    margin-top: 30px;
+    border: 1px solid #d3d3d3;
+    background-color: #f5f5f5;
+    flex-direction: row;
+}
+
+.findmusic-mid-left2 ul li {
+    position: relative;
+    flex: 1;
+}
+
+.findmusic-mid-left2 ul li img {
+    position: absolute;
+    top: 10px;
+    left: 9px;
+}
+
+.findmusic-mid-left2 ul li span {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+    width: 118px;
+    text-align: center;
+    position: absolute;
+    top: 130px;
+}
+
+.findmusic-mid-left2 ul li span:hover {
+    text-decoration: underline;
+}
+
+.findmusic-mid-left3 {
+    position: relative;
+    background-color: #ffffff;
+    float: left;
+    width: 689px;
+    padding: 20px 20px 40px;
+    height: 570px;
+    border-left: 1px solid #d3d3d3;
+    border-right: 1px solid #d3d3d3;
+}
+
+.findmusic-mid-left3 ul {
+    float: left;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 225px;
+    margin: 0 auto;
+    border: 1px solid #d3d3d3;
+    background-color: #f5f5f5;
+    flex-direction: column;
+}
+
+.findmusic-mid-left-span2 {
+    font-size: 24px;
+}
+
+#findmusic-mid-left-span4 {
+    position: relative;
+    display: block;
+    width: 680px;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    background-color: #c10d0c;
+}
+
+.findmusic-mid-left3 ul>li {
+    font-size: 12px;
+    padding-top: 11px;
+    padding-left: 20px;
+    flex: 1;
+}
+
+.findmusic-mid-left3 ul>li:nth-child(2n) {
+    background-color: #e8e8e8;
+}
+
+.findmusic-mid-left3-li1 img:nth-child(1) {
+    position: relative;
+    top: 10px;
+}
+
+.findmusic-mid-left3-li1 img:nth-child(3) {
+    position: relative;
+    left: 0px;
+    top: -40px;
+    left: 90px;
+}
+
+.findmusic-mid-left3-span1 {
+    font-size: 14px;
+    color: #000;
+    position: relative;
+    left: 10px;
+    top: -50px;
+}
+
+.findmusic-mid-left3 .findmusic-mid-left3-li2 {
+    text-align: right;
+    padding-right: 30px;
+}
+/* 公共底部 */
+.findmusic-footer {
+    position: absolute;
+    top: 2060px;
+    width: 1280px;
+    height: 180px;
+    border-top: 1px solid #d3d3d3;
+    background-color: #f2f2f2;
+}
+
+.findmusic-footer ul {
+    display: flex;
+    flex-direction: row;
+    width: 520px;
+    height: 24px;
+    list-style: none;
+    margin-left: 160px;
+    margin-top: 20px;
+}
+
+.findmusic-footer li {
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+    flex: 1;
+    line-height: 24px;
+    border-right: 1px solid #d6d6d6;
+}
+/* 公共底部下面的公共span */
+.findmusic-footer span {
+    font-size: 12px;
+    width: 500px;
+    height: 24px;
+    line-height: 24px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 180px;
+    color: #727272;
+}
+/* 底部右边图片 */
+.findmusic-footer img {
+    float: right;
+    position: relative;
+    top: -30px;
+    margin-right: 200px;
+}
+/* 右部上边div */
+.findmusic-mid-right-top{
+    width: 100%;
+    height: 180px;
+    position: relative;
+    border-bottom: 1px solid rgb(178,178,178);
+    background-color:rgb(245,245,245);
+}
+/* 头像 */
+#findmusic-mid-right-top1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+/* id */
+.findmusic-mid-right-top span:nth-child(2){
+    position: relative;
+    color: #666;
+    font-size: 14px;
+    top: 20px;
+    left: 120px;
+}
+/* 按钮 */
+.findmusic-mid-right-top button{
+    position: relative;
+    width: 80px;
+    height: 20px;
+    color: #fff;
+    background-color: rgb(39, 120,198);
+    border-radius: 5px;
+    border-style: none;
+
+    top: 75px;
+    left: 40px;
+
+}
+/* 等级图片 */
+.findmusic-mid-right-top img:nth-child(3){
+    position: relative;
+    top: 50px;
+    left: 85px;
+}
+/* 动态关注粉丝 */
+.findmusic-mid-right-top ul{
+   
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    width: 150px;
+    margin-top: 95px;
+    margin-left: 10px;
+    list-style: none;
+
+}
+.findmusic-mid-right-top ul li{
+    flex: 1;
+    border-right: 1px solid rgb(228,228,228);
+    color: #666666;
+   font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    
+}
+/* 右部中部div */
+.findmusic-mid-right-mid
+{
+    height: 550px;
+    width: 84%;
+    margin: 0 auto;
+}
+/*     入驻歌手  */
+.findmusic-mid-right-mid>span:nth-child(1){
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+    float: left;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* 查看全部 */
+.findmusic-mid-right-mid>span:nth-child(2){
+    margin-top: 10px;
+    margin-right: 10px;
+    float: right;
+    font-size: 12px;
+    color: rgb(102, 102,102)
+}
+/* 中部div ul */
+.findmusic-mid-right-mid ul{
+    height: 400px;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 20px;
+    list-style: none;
+    border-top: 1px solid rgb(204, 204, 204);
+    display: flex;
+    flex-direction: column;
+}
+/* 歌手详情 */
+.findmusic-mid-right-mid ul li{
+    position: relative;
+    flex: 1;
+    margin-bottom: 15px;
+    border: 1px solid rgb(228,228,228);
+    font-size: 12px;
+
+
+}
+/* 歌手头像 */
+.findmusic-mid-right-mid>ul>li>img{
+    position: absolute;
+  
+   
+
+    
+
+}
+.findmusic-mid-right-mid ul li span{
+    position: absolute;
+    font-size: 12px;
+    
+}
+/* 歌手名字 */
+.findmusic-mid-right-mid ul li span:nth-child(2){
+    top: 10px;
+    font-weight: bold;
+    left: 80px;
+
+}
+/* 歌手简介 */
+.findmusic-mid-right-mid ul li span:nth-child(3){
+    color: #666;
+    top: 40px;
+    left: 80px;
+
+}
+/* button 申请成为网易音乐人 */
+.findmusic-mid-right-mid button{
+    width: 84%;
+    margin-left: 10px;
+    margin:20 auto;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    border:1px solid rgb(229, 229, 229);
+    background-color:rgb(245,245,245);
+}
+.findmusic-mid-right-mid button:hover{
+    background-color: #ffffff;
+}
+
+/* 热门主播 */
+.findmusic-mid-right-mid-span2{
+    font-size: 12px;
+    font-weight: bold;
+    float: left;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.findmusic-mid-right-foot
+{
+    height: 550px;
+    width: 84%;
+    margin: 0 auto;
+}
+.findmusic-mid-right-foot>ul{
+    height: 300px;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 20px;
+    list-style: none;
+    border-top: 1px solid rgb(204, 204, 204);
+    display: flex;
+    flex-direction: column;
+}
+.findmusic-mid-right-foot>ul>li{
+    position: relative;
+    flex: 1;
+    margin-bottom: 15px;
+    
+   
+    font-size: 12px;
+
+
+}
+.findmusic-mid-right-foot>ul>li>span{
+    position: absolute;
+    font-size: 12px;
+    
+}
+/* 歌手名字 */
+.findmusic-mid-right-foot>ul>li>span:nth-child(2){
+
+    font-weight: bold;
+    left: 60px;
+
+}
+/* 歌手简介 */
+.findmusic-mid-right-foot ul li span:nth-child(3){
+    color: #666;
+    top: 20px;
+    left: 60px;
+
+}
